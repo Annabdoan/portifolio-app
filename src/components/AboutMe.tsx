@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/AnnaLogoTransp.png";
 
 const AboutMe = () => {
   return (
@@ -17,7 +18,9 @@ const AboutMe = () => {
             <p>Hi. I´m Anna, nice to meet you. Pleace take a look around.</p>
           </div>
           <div>
-            <p>I am passionate about tech and solving problems with code.</p>
+            <p>I am passionate about tech and solving problems with code.
+              
+            </p>
           </div>
         </div>
       </div>

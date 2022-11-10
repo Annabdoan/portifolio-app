@@ -1,10 +1,8 @@
-# Kom i gang med å lage din egen portefølje med React, Typescript, Tailwind og Azure.
-
-Dette er et kurs holdt av Forte digital for Ada NTNU 9. november 2022.
+# Portefølje laget med React, Typescript, Tailwind og Azure.
 
 ## 💻 Teknologier 
 
-I dette prosjektet bruker vi React med Typescript og Tailwind for å lage porteføljen:
+I dette prosjektet bruker jeg React med Typescript og Tailwind for å lage porteføljen:
 
 [React](https://reactjs.org/docs/getting-started.html)
 

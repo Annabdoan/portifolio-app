@@ -1,11 +1,24 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import logo from "../assets/AnnaLogoTransp.png";
+import gitLogo from "../assets/GitHub-Mark-64px.png";
+import { Link } from "react-scroll";
+
+import { link } from "fs";
 
 export const HomePage = () => {
-  return (
-    <div id="home" className="w-full h-screen bg-[#edede9]">
+  return ( 
+    <div id="home" className="w-full h-screen bg-[#edede9] grid sm:grid-cols-2 gap-8 px-4" >
+
       <div className="max-w-[1000 px] mx-auto px-20 flex flex-col justify-center h-full">
-        <p className="text-black">Hi, my name is</p>
+        <img src={logo} alt="Logo" style={{ width: "500px" }} />
+
+        <a href="https://github.com/Annabdoan" target="_blank" rel="noreferrer">
+          <img src={gitLogo} alt="example" />
+        </a>
+      </div>
+
+      <div className="max-w-[1000 px] mx-auto px-20 flex flex-col justify-center h-full">
         <h1 className="text-4xl sm:text-7xl font-bold text-gray-700">
           Anna Bich-Huyen Doan
         </h1>
@@ -19,10 +32,13 @@ export const HomePage = () => {
           <button className="text-gray-700 group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#989cab] hover:border-[#989cab] hover:text-white">
             View Work
             <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
+              <Link to="projects" smooth={true} duration={500}>
+                <HiArrowNarrowRight className="ml-3" />
+              </Link>
             </span>
           </button>
         </div>
+      
       </div>
     </div>
   );
